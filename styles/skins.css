@@ -1,0 +1,17 @@
+.bgBlue {
+  background-color: blue;
+}
+
+.bgOrange {
+  background-color: orange;
+}
+
+.fontMedium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.fontRegular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
