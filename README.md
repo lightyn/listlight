@@ -1,2 +1,2 @@
-# listlight
-Quick, mobile-focused, list creation and management app
+# codeBeetles
+A Project Playground for Idea Testing
