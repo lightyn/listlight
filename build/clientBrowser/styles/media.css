@@ -1,0 +1,49 @@
+@media (max-width: 700px) {
+
+#headerContainer {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+.crushedButtons {
+	width: 100%;
+}
+
+.searchbar {
+	width: calc(70vw);
+	text-align: left;
+}
+
+.liSearchbar {
+	text-align: left;
+	float: left;
+}
+
+.button {
+	width: calc(25vw);
+}
+
+.liUi {
+	width: 33%;
+	padding: 1rem 0 1rem 0;
+	outline-width: 0;
+	border-width: calc(0.165vw);
+}
+
+.liUi:focus {
+	width: 33%;
+	padding: 0.8rem 0 0.8rem 0;
+	outline-width: 0;
+	/*border-width-left: calc(0.165vw);
+	border-width-right: calc(0.165vw);*/
+}
+
+#headerUi {
+	padding: 0rem 0rem 0rem 0rem;
+}
+
+#contentWrapper {
+	padding: 2rem 7% 2rem 7%;
+}
+
+}

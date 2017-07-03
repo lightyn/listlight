@@ -1,0 +1,26 @@
+/*
+<link href="styles/normalize.css" rel="stylesheet" />
+<link href="libraries/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+<link href="styles/style.css" rel="stylesheet" />
+<link href='styles/media.css' rel="stylesheet" />
+<link href='styles/accordion.css' rel="stylesheet" />
+*/
+
+//Normalize the user agent
+@import "normalize.scss";
+
+//Bring in jqueryui defaults
+@import "jquery-ui.min.scss";
+
+//Load placeholder CSS
+@import "style.scss";
+@import "accordion.scss";
+
+//TODO: Implement OOCSS
+//Load aesthetics
+//@import "skins.scss";
+//Load structure
+//@import "containers.scss";
+
+//Keep media queries last
+@import "media.scss";
