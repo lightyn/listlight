@@ -43,7 +43,11 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            all: ["source/**/*.js"]
+          options: {
+            '-W104': true
+          },
+          clientBrowser: ['source/clientBrowser/scripts/*.js'],
+          server: ['source/server/*.js']
         }
     });
 
@@ -63,5 +67,6 @@ module.exports = function(grunt) {
 
 
 
-    grunt.registerTask('lintjs','Lints javascript for errors',['jshint']);
+    grunt.registerTask('lintServerJS','Lints server custom javascript for errors',['jshint:server']);
+    grunt.registerTask('lintClientBrowserJS','Lints browser client custom javascript for errors',['jshint:clientBrowser']);
 };
