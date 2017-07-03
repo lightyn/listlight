@@ -16,7 +16,7 @@ Run ```npm install``` command in the root project directory.
 `grunt lintjs` will lint all **.js** files in the source directory
 
 ### SCSS Preprocessing
-`sass scss/main.scss style.css` to precompile css from sass. Implemented HTML
+`sass scss/main.scss style.css` to precompile css from scss. Implemented HTML
 only references this one master stylesheet to reduce resource calls,
 with main.scss acting as an import table to every required stylesheet. If you
 add a css file, give it the extension **.scss** and `@import "yourStyleSheetPathHere"`
