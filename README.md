@@ -20,5 +20,5 @@ Run ```npm install``` command in the root project directory.
 only references this one master stylesheet to reduce resource calls,
 with main.scss acting as an import table to every required stylesheet. If you
 add any css, give it the extension .scss and @import "`yourStyleSheetPathHere`"
-to the main.scss stylesheet in whatever import order you want it to be hit in
+to the main.scss stylesheet in whatever import order you want it in
 the cascade.
