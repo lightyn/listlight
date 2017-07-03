@@ -10,10 +10,10 @@ Run ```npm install``` command in the root project directory.
 ## Buildscript (grunt) commands:
 ### Build
 `grunt buildClientBrowser` will build the client browser app from source.
-`grunt buildServer` will build the *Node* server.
+`grunt buildServer` will build the **Node** server.
 
 ### Linting
-`grunt lintjs` will lint all *.js* files in the source directory
+`grunt lintjs` will lint all **.js** files in the source directory
 
 ### SCSS Preprocessing
 `sass scss/main.scss style.css` to precompile css from sass. Implemented HTML
