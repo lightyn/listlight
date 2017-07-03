@@ -12,10 +12,10 @@ Run ```npm install``` command in the root project directory.
 `grunt buildClientBrowser` will build the client browser app from source.
 `grunt buildServer` will build the *Node* server.
 
-###Linting
+### Linting
 `grunt lintjs` will lint all *.js* files in the source directory
 
-###SCSS Preprocessing
+### SCSS Preprocessing
 `sass scss/main.scss style.css` to precompile css from sass. Implemented HTML
 only references this one master stylesheet to reduce resource calls,
 with main.scss acting as an import table to every required stylesheet. If you
