@@ -8,7 +8,7 @@ Node.js and MongoDB both need to be installed.
 Run ```npm install``` command in the root project directory.
 
 ## Run guide
-Build the client and server using the buildscript commands noted below
+Build the client and server using the buildscript commands noted below. <br />
 Run ```node build/server/server.js``` in the root project directory.
 
 ## Buildscript (grunt) commands:
