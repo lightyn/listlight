@@ -7,6 +7,10 @@ Node.js and MongoDB both need to be installed.
 ## Setup guide:
 Run ```npm install``` command in the root project directory.
 
+## Run guide
+Build the client and server using the buildscript commands noted below
+Run ```node build/server/server.js``` in the root project directory.
+
 ## Buildscript (grunt) commands:
 ### Build
 * `grunt buildClientBrowser` will build the client browser app from source. <br />
