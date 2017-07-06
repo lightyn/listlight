@@ -2394,6 +2394,10 @@ body {
   font-weight: 700;
 }
 
+.listItem {
+  display: flex;
+}
+
 #headerUi {
   margin: 0;
   padding: 0rem 0rem 0rem 3rem;
