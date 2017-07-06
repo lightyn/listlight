@@ -16,15 +16,31 @@ module.exports = function(grunt) {
                 expand: true
             }
         },
+        watch: {
+            clientBrowser: {
+                files: ['source/clientBrowser/**/*'],
+                tasks: ['buildClientBrowser'],
+                options: {
+                    spawn: true
+                }
+            },
+            server: {
+                files: ['source/server/**/*'],
+                tasks: ['buildServer'],
+                options: {
+                    spawn: true
+                }
+            }
+        },
         sass: {// Task
-            dist: {                            // Target
-                options: {                       // Target options
-                    style: 'expanded'
-                },
-                files: [{                         // Dictionary of files
-                    'build/main.css': 'src/main.scss',       // 'destination': 'source'
-                    'widgets.css': 'widgets.scss'
-                }]
+            clientBrowser: {
+
+                    options: {                       // Target options
+                        style: 'expanded'
+                    },
+                    files: [{                         // Dictionary of files
+                        'source/clientBrowser/style.css': 'source/clientBrowser/scss/main.scss'       // 'destination': 'source'
+                    }]
             }
         },
         clean: {
@@ -55,6 +71,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // define the tasks
     grunt.registerTask('buildServer',
@@ -63,7 +81,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('buildClientBrowser',
     'Compiles web client assets and copies the files to the build/clientBrowser directory.',
-    [ 'clean:clientBrowser', 'copy:clientBrowser' ]);
+    [ 'sass:clientBrowser', 'clean:clientBrowser', 'copy:clientBrowser' ]);
 
 
 
