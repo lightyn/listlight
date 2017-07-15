@@ -1,18 +1,25 @@
-# listlight
-A recipe-oriented grocery list creation and management app.
+# CartBlender
+A recipe-oriented grocery list creation and management app. <br /> [Trello board] (https://trello.com/b/6ezFxdMK/grocery-app)
 
-## Prerequisite software
-Node.js and MongoDB both need to be installed.
+## Run guide
+Latest stable client release is available in build/clientBrowser folder. Just launch
+index.html to view. (Backend will use Java with Spark instead of Node to mitigate
+  dependency and server platform configuration issues [fleeing back to Maven/gradle])
+
+<!-- SERVER COMMANDS OUTDATED, BUILDING BACKEND WITH SPARK INSTEAD
+## Prerequisite server software
+Node.js, npm, and MongoDB all need to be installed.
 
 ## Setup guide:
 Run ```npm install``` command in the root project directory. <br />
 Build the client and server using the buildscript commands noted below. <br />
 Run ```node build/server/server.js``` in the root project directory.
+-->
 
 ## Buildscript (grunt) commands:
 ### Build
-* `grunt buildClientBrowser` will build the client browser app from source. <br />
-* `grunt buildServer` will build the **Node** server.
+`grunt buildClientBrowser` will build the client browser app from source. <br />
+<!--* `grunt buildServer` will build the **Node** server. -->
 
 ### Linting
 `grunt lintjs` will lint all **.js** files in the source directory
