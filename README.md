@@ -17,7 +17,7 @@ Run ```node build/server/server.js``` in the root project directory.
 -->
 
 ## Buildscript (grunt) commands:
-### Build
+### Building
 `grunt buildClientBrowser` will build the client browser app from source. <br />
 <!--* `grunt buildServer` will build the **Node** server. -->
 
