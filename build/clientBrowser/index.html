@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Navigation -->
   <div id="navWrapper">
     <nav class="navContainer">
       <ul id="headerUi">
@@ -32,31 +33,32 @@
       </ul>
     </nav>
   </div>
+  <!-- Main content -->
   <div id="contentWrapper">
     <div class="contentContainer">
       <div class='listContainer hiddenPane' id="recipeList">
         <!-- JQUERYUI accordion structure begins -->
         <div class="accordion">
           <div class="group">
-            <h3>Things 1</h3>
+            <h3>Bologna Sandwiches</h3>
             <div>
               <ul class="listItem">
                 <input type="checkbox">
-                <li class="listItemUI listItemQuantity">Quantity</li>
-                <li class="listItemUI listItemUnits">Units</li>
-                <li class="listItemUI listItemName">Name</li>
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="One"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Pound Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Bologna"></li>
               </ul>
               <ul class="listItem">
                 <input type="checkbox">
-                <li class="listItemUI listItemQuantity">Quantity</li>
-                <li class="listItemUI listItemUnits">Units</li>
-                <li class="listItemUI listItemName">Name</li>
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="Two"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Packages Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Cheese"></li>
               </ul>
               <ul class="listItem">
                 <input type="checkbox">
-                <li class="listItemUI listItemQuantity">Quantity</li>
-                <li class="listItemUI listItemUnits">Units</li>
-                <li class="listItemUI listItemName">Name</li>
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="Two"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Loaves Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Bread"></li>
               </ul>
             </div>
           </div>
@@ -66,25 +68,31 @@
       <div class='listContainer' id="shoppingList">
         <div class="accordion">
           <div class="group">
-            <h3>Things 1</h3>
+            <h3>Bakery</h3>
             <div>
               <ul class="listItem">
                 <input type="checkbox">
-                <li class="listItemUI listItemQuantity">Quantity</li>
-                <li class="listItemUI listItemUnits">Units</li>
-                <li class="listItemUI listItemName">Name</li>
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="Two"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Loaves Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Bread"></li>
               </ul>
             </div>
           </div>
           <div class="group">
-            <h3>Things 2</h3>
+            <h3>Deli</h3>
             <div>
               <ul class="listItem">
                 <input type="checkbox">
-                <li class="listItemUI listItemQuantity">Quantity</li>
-                <li class="listItemUI listItemUnits">Units</li>
-                <li class="listItemUI listItemName">Name</li>
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="One"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Pound Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Bologna"></li>
               </ul>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity"><input class="listInput" type="text" value="Two"></li>
+                <li class="listItemUI listItemUnits"><input class="listInput" type="text" value="Packages Of"></li>
+                <li class="listItemUI listItemName"><input class="listInput" type="text" value="Cheese"></li>
+            </ul>
             </div>
           </div>
         </div>
@@ -93,6 +101,7 @@
   </div>
   <!--Custom script to initialize all jqueryui accordions-->
   <script src="scripts/accordion.js"></script>
+  <!--Main content scripts -->
   <script src="scripts/scripts.js"></script>
 </body>
 

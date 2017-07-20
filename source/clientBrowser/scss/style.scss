@@ -148,7 +148,6 @@ ul {
 	color: #FFFFFF;
 	text-align: center;
 	text-shadow: 0.05rem 0.05rem #32445b;
-	//float: left;
 	padding: 0.9rem 1rem 0.7rem;
 	font-weight: 400;
 }
@@ -178,9 +177,7 @@ ul {
 
 
 //===CONTENT===
-
 #contentWrapper {
-	//background-image: url("../favicon.ico");
 	margin: 0;
 	padding: 2rem 15%;
 }
@@ -208,6 +205,11 @@ ul {
 .liItemUI {
 	flex-grow: 1;
 }
+.listInput {
+    border: none;
+    width: 100%;
+    text-align: center;
+}
 
 //===JQUERYUI OVERRIDES===
 
@@ -221,6 +223,7 @@ ul {
 
 .ui-accordion-header {
 	font-weight: 600;
+    flex-grow: 4;
 }
 
 .ui-accordion-header-collapsed {

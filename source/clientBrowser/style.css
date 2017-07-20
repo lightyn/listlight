@@ -2495,6 +2495,12 @@ ul {
   flex-grow: 1;
 }
 
+.listInput {
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
 #shoppingList .ui-accordion-header-active {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e6a9a+0,2aa4d8+50,2094ca+50,2094ca+50,32445b+100 */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,32445b+100 */
@@ -2530,6 +2536,7 @@ ul {
 
 .ui-accordion-header {
   font-weight: 600;
+  flex-grow: 4;
 }
 
 .ui-accordion-header-collapsed {
