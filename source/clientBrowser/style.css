@@ -2310,33 +2310,85 @@ html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ddf3ff 0%, #2aa4d8 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddf3ff', endColorstr='#2aa4d8',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ddf3ff', endColorstr='#2aa4d8',GradientType=0 );
   /* IE6-9 */
   background-attachment: fixed;
 }
 
-.button:focus {
-  border: 3px solid #FFFFFF;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 
-#contentWrapper {
-  margin: 0rem 0rem 0rem 0rem;
-  padding: 2rem 15% 2rem 15%;
+ol,
+ul {
+  list-style-type: none;
 }
 
-.liUi {
+.inlineIcon {
+  vertical-align: middle;
+  margin-top: 1px;
+  margin-right: -3px;
+}
+
+#headerWrapper {
+  padding: 1rem 0;
+  background: #2aa4d8;
+  	/*	border-bottom-width: 1px;
+  	border-bottom-color: #57B2D6;
+  	border-bottom-style: solid;
+  */
+}
+
+#headerContainer {
+  text-align: left;
+  text-shadow: 0.1rem 0.1rem #32445b;
   color: #FFFFFF;
-  padding: 1rem 1rem 1rem 1rem;
+  padding-left: 4rem;
+  font-size: 2rem;
+}
+
+#navWrapper {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e6a9a+0,2aa4d8+50,2094ca+50,2094ca+50,32445b+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,32445b+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,44637c+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2094ca+50,2e62a5+100 */
+  background: #2aa4d8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#2e62a5',GradientType=0 );
+  /* IE6-9 */
+  text-shadow: 0.05rem 0.05rem #32445b;
+  width: 100%;
+  overflow: hidden;
+}
+
+#navContainer {
+  margin: 0;
+  display: flex;
+}
+
+#headerUi {
+  margin: 0;
+  padding: 0 0 0 3rem;
+  	/*	border-top-width: 1px;
+  	border-top-color: #2094ca;
+  	border-top-style: solid;
+  */
+}
+
+.navUi {
+  flex-grow: 1;
+  color: #FFFFFF;
+  padding: 1rem;
   text-align: center;
-  width: 5rem;
   cursor: pointer;
-  float: left;
-  text-shadow: .05rem .05rem #32445b;
+  text-shadow: 0.05rem 0.05rem #32445b;
   border-right-style: solid;
   border-right-color: #57B2D6;
   border-right-width: 1px;
@@ -2346,30 +2398,59 @@ body {
   font-weight: 700;
 }
 
-.liSearchbar {
+.navUi:hover {
+  color: #32445b;
+  background: #FFFFFF;
+  text-shadow: none;
+  border: 1px solid #FFFFFF;
+}
+
+.navUi:focus {
+  border: 3px solid #FFFFFF;
+  padding: 0.875rem;
+}
+
+.navSearchbar {
   color: #FFFFFF;
   text-align: center;
-  text-shadow: .05rem .05rem #32445b;
-  float: left;
-  padding: 0.9rem 1rem 0.7rem 1rem;
+  text-shadow: 0.05rem 0.05rem #32445b;
+  padding: 0.9rem 1rem 0.7rem;
   font-weight: 400;
 }
 
+.navLogo {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0.05rem 0.05rem #32445b;
+  float: left;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.button:focus {
+  border: 3px solid #FFFFFF;
+}
+
 .button {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e6a9a+0,2aa4d8+50,2094ca+50,2094ca+50,32445b+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,32445b+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,44637c+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2094ca+50,2e62a5+100 */
   background: #2aa4d8;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -moz-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: linear-gradient(to bottom, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#44637c',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#2e62a5',GradientType=0 );
   /* IE6-9 */
+  text-shadow: 0.05rem 0.05rem #32445b;
   color: #FFFFFF;
-  text-shadow: .05rem .05rem #32445b;
+  text-shadow: 0.05rem 0.05rem #32445b;
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: pointer;
   border-right-style: solid;
   border-right-color: #2094ca;
@@ -2385,99 +2466,70 @@ body {
   border-bottom-width: 3px;
 }
 
-.liLogo {
-  color: #FFFFFF;
-  text-align: center;
-  text-shadow: .05rem .05rem #32445b;
-  float: left;
-  padding: 1rem 1rem 1rem 1rem;
-  font-weight: 700;
+#contentWrapper {
+  margin: 0;
+  padding: 2rem 15%;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listContainer {
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.listContainer:first-child {
+  margin-right: 1rem;
 }
 
 .listItem {
   display: flex;
+  padding: 0px;
+  justify-content: space-between;
 }
 
-#headerUi {
-  margin: 0;
-  padding: 0rem 0rem 0rem 3rem;
-  /*	border-top-width: 1px;
-  	border-top-color: #2094ca;
-  	border-top-style: solid;
-  */
+.liItemUI {
+  flex-grow: 1;
 }
 
-.liUi:hover {
-  color: #32445b;
-  background: #FFFFFF;
-  text-shadow: none;
-}
-
-.liUi:focus {
-  border: 3px solid #FFFFFF;
-  padding: 0.875rem;
-}
-
-ol, ul {
-  list-style-type: none;
-}
-
-#navWrapper {
+#shoppingList .ui-accordion-header-active {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e6a9a+0,2aa4d8+50,2094ca+50,2094ca+50,32445b+100 */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,32445b+100 */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2aa4d8+14,2094ca+50,44637c+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2aa4d8+12,2094ca+50,2e62a5+100 */
   background: #2aa4d8;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -moz-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: linear-gradient(to bottom, #2aa4d8 12%, #2094ca 50%, #2e62a5 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#44637c',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#2e62a5',GradientType=0 );
   /* IE6-9 */
-  width: 100%;
-  overflow: hidden;
+  text-shadow: 0.05rem 0.05rem #32445b;
 }
 
-#navContainer {
-  margin: 0rem 0rem 0rem 0rem;
-}
-
-#headerWrapper {
-  padding: 1rem 0rem 1rem 0rem;
-  background: #2aa4d8;
-  /*	border-bottom-width: 1px;
-  	border-bottom-color: #57B2D6;
-  	border-bottom-style: solid;
-  */
-}
-
-#headerContainer {
-  text-align: left;
-  text-shadow: .1rem .1rem #32445b;
-  color: #FFFFFF;
-  padding-left: 4rem;
-  font-size: 2rem;
-}
-
-#inlineFavicon {
-  vertical-align: middle;
-  margin-top: 1px;
-  margin-right: -3px;
-}
-
-.ui-accordion-header-active {
-  background: #2aa4d8;
+#recipeList .ui-accordion-header-active {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7c2b+12,ff7a28+49,ef3700+100 */
+  background: #ff7c2b;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -moz-linear-gradient(top, #ff7c2b 12%, #ff7a28 49%, #ef3700 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: -webkit-linear-gradient(top, #ff7c2b 12%, #ff7a28 49%, #ef3700 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #2aa4d8 12%, #2aa4d8 14%, #2094ca 50%, #44637c 100%);
+  background: linear-gradient(to bottom, #ff7c2b 12%, #ff7a28 49%, #ef3700 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2aa4d8', endColorstr='#44637c',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c2b', endColorstr='#ef3700',GradientType=0 );
   /* IE6-9 */
+  text-shadow: 0.05rem 0.05rem #ef3700;
+}
+
+.ui-accordion-header {
+  font-weight: 600;
 }
 
 .ui-accordion-header-collapsed {
@@ -2489,10 +2541,39 @@ ol, ul {
   border-width: 0px;
 }
 
-@media (min-width: 600px) {
+.ui-accordion .ui-accordion-header {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .hiddenPane {
+    display: none;
+  }
+
+  .mobileButtons {
+    display: flex;
+  }
+
+  .navLogo {
+    display: none;
+  }
+
+  #headerUi {
+    padding: 0;
+  }
+
+  .listContainer:first-child {
+    margin-right: 0rem;
+  }
+}
+@media (min-width: 800px) {
   #headerWrapper {
     text-align: left;
     padding: 1rem 0rem 0rem 14rem;
+  }
+
+  .mobileButtons {
+    display: none;
   }
 }
 

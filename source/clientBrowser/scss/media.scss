@@ -1,6 +1,32 @@
-@media (min-width: 600px) {
+@media (max-width: 800px) {
+.hiddenPane {
+  	display: none;
+}
+.mobileButtons {
+    display: flex;
+}
+
+.navLogo {
+  display: none;
+}
+
+#headerUi {
+  padding: 0;
+}
+
+.listContainer:first-child {
+	margin-right: 0rem;
+}
+
+}
+@media (min-width: 800px) {
 #headerWrapper {
     text-align: left;
     padding: 1rem 0rem 0rem 14rem;
 }
+
+.mobileButtons {
+  display: none;
+}
+
 }
