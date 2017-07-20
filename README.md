@@ -1,5 +1,5 @@
 # CartBlender
-A recipe-oriented grocery list creation and management app. <br /> [Trello board](https://trello.com/b/6ezFxdMK/grocery-app)
+A recipe-oriented list creation and management app. <br /> [Trello board](https://trello.com/b/6ezFxdMK/grocery-app)
 
 ## Run guide
 Latest stable client release is available in build/clientBrowser folder. Just clone or download the folder then launch index.html to view. (Backend will use Java with Spark instead of Node to mitigate
