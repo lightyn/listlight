@@ -5,6 +5,17 @@ A recipe-oriented list creation and management app. <br /> [Trello board](https:
 Latest stable client release is available in build/clientBrowser folder. Just clone or download the folder then launch index.html to view. (Backend will use Java with Spark instead of Node to mitigate
   dependency and server platform configuration issues [fleeing back to Maven/gradle])
 
+## Code Louisville Reqs
+* Responsive with media queries found in media.scss and flexbox. <br />
+* All CSS aside from jquery-ui.min.scss and normalize.scss is custom-made. <br />
+* Scripts.js event handlers and accordion.js jqueryui initializer are custom-made. <br />
+* Every list item contains an input field, lists are drag/droppable, and mobile-view
+ nav buttons toggle between recipe and shop list views. <br />
+* HTML, JavaScript, and most CSS contains code comments. <br />
+* typeOf(this) == README.MD <br />
+* Implements Jquery, JqueryUI, npm, and Grunt. <br />
+* Fun was had.
+
 <!-- SERVER COMMANDS OUTDATED, BUILDING BACKEND WITH SPARK INSTEAD
 ## Prerequisite server software
 Node.js, npm, and MongoDB all need to be installed.
