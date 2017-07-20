@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>CartBlender</title>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+
+  <script src="libraries/jquery-3.2.1.min.js"></script>
+  <script src="libraries/jqueryui/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+  <div id="navWrapper">
+    <nav class="navContainer">
+      <ul id="headerUi">
+        <li class="navLogo">CartBlender</li>
+        <!--Searchbar to be implemented later
+        <li class="liSearchbar">
+          <form action="js/scripts.js">
+            <input type="text" tabindex="1" class="searchbar" name="searchbar">
+            <input type="submit" tabindex="2" class="button" value="Search">
+          </form>
+        </li>-->
+        <div class="mobileButtons">
+          <li class="navUi" id="mobileButtonRecipe" tabindex="3">Plan</li>
+          <li class="navUi" id="mobileButtonShop" tabindex="4">Shop</li>
+          <!--MAKE to be implemented <li class="liUi" tabindex="5">Make</li>-->
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <div id="contentWrapper">
+    <div class="contentContainer">
+      <div class='listContainer hiddenPane' id="recipeList">
+        <!-- JQUERYUI accordion structure begins -->
+        <div class="accordion">
+          <div class="group">
+            <h3>Things 1</h3>
+            <div>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity">Quantity</li>
+                <li class="listItemUI listItemUnits">Units</li>
+                <li class="listItemUI listItemName">Name</li>
+              </ul>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity">Quantity</li>
+                <li class="listItemUI listItemUnits">Units</li>
+                <li class="listItemUI listItemName">Name</li>
+              </ul>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity">Quantity</li>
+                <li class="listItemUI listItemUnits">Units</li>
+                <li class="listItemUI listItemName">Name</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--JQUERYUI accordion structure ends-->
+      </div>
+      <div class='listContainer' id="shoppingList">
+        <div class="accordion">
+          <div class="group">
+            <h3>Things 1</h3>
+            <div>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity">Quantity</li>
+                <li class="listItemUI listItemUnits">Units</li>
+                <li class="listItemUI listItemName">Name</li>
+              </ul>
+            </div>
+          </div>
+          <div class="group">
+            <h3>Things 2</h3>
+            <div>
+              <ul class="listItem">
+                <input type="checkbox">
+                <li class="listItemUI listItemQuantity">Quantity</li>
+                <li class="listItemUI listItemUnits">Units</li>
+                <li class="listItemUI listItemName">Name</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Custom script to initialize all jqueryui accordions-->
+  <script src="scripts/accordion.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
