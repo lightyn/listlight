@@ -1,4 +1,4 @@
-# CartBlender
+# ListLight
 A recipe-oriented list creation and management app. <br /> [Trello board](https://trello.com/b/6ezFxdMK/grocery-app)
 
 ## Run guide
