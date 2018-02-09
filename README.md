@@ -11,7 +11,7 @@ Node.js, npm, and MongoDB all need to be installed.
 -->
 
 ## Setup guide:
-Install npm (found here: https://docs.npmjs.com/cli/install)
+Install npm (found here: https://docs.npmjs.com/cli/install) <br />
 Run ```npm install``` command in the root project directory. <br />
 Build the client and server using the buildscript commands noted below. <br />
 Run ```node build/server/server.js``` in the root project directory.
